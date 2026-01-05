@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gulf Horizon Residency | Palakollu</title>
+
+<meta name="description" content="Premium Deluxe & Suite Rooms in Palakollu – Gulf Horizon Residency">
+<meta name="keywords" content="Gulf Horizon Residency, Palakollu Hotel">
+<meta name="author" content="Gulf Horizon Residency">
+<meta name="robots" content="index, follow">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<img src="logo-left.png" class="logo-left" alt="Logo Left">
+<img src="logo-right.png" class="logo-right" alt="Logo Right">
+<h1>GULF HORIZON RESIDENCY</h1>
+<p>Luxury Stay in Palakollu</p>
+<nav>
+<a href="#home">Home</a>
+<a href="#gallery">Gallery</a>
+<a href="#rooms">Rooms</a>
+<a href="#booking">Booking</a>
+<a href="#facilities">Facilities</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="hero" id="home">
+<h1>Experience Comfort & Luxury</h1>
+<p>Deluxe & Suite Rooms · Prime Location</p>
+<a class="btn" href="tel:9701111659">📞 Call</a>
+<a class="btn" href="https://wa.me/919701111659" target="_blank">💬 WhatsApp</a>
+</div>
+
+<section id="gallery">
+<h2>Photo Gallery</h2>
+<div class="gallery">
+<img src="room1.jpg" onclick="openImg(this.src)">
+<img src="room2.jpg" onclick="openImg(this.src)">
+<img src="lodge1.jpg" onclick="openImg(this.src)">
+<img src="lodge2.jpg" onclick="openImg(this.src)">
+</div>
+</section>
+
+<section id="rooms">
+<h2>Our Rooms</h2>
+<div class="cards">
+<div class="card" onclick="openRoom('Deluxe Room','room1.jpg')">Deluxe Room</div>
+<div class="card" onclick="openRoom('Suite Room','room2.jpg')">Suite Room</div>
+</div>
+</section>
+
+<section id="booking">
+<h2>Online Booking</h2>
+<form onsubmit="sendWhatsApp(event)">
+<input id="name" placeholder="Full Name" required>
+<input id="phone" placeholder="Mobile Number" required>
+<select id="room">
+<option>Deluxe Room</option>
+<option>Suite Room</option>
+</select>
+<input id="checkin" type="date" required>
+<input id="checkout" type="date" required>
+<button>Book via WhatsApp</button>
+</form>
+</section>
+
+<section id="facilities">
+<h2>Facilities</h2>
+<div class="fac-grid">
+<div class="fac">🛜 Wi-Fi</div>
+<div class="fac">🚗 Parking</div>
+<div class="fac">❄️ AC Rooms</div>
+<div class="fac">🚿 Hot Water</div>
+<div class="fac">📺 LED TV</div>
+<div class="fac">🎥 CCTV Security</div>
+</div>
+</section>
+
+<section class="reviews" id="reviews">
+<h2>⭐ Google Reviews ⭐</h2>
+<div class="stars">★★★★★</div>
+<div class="rating-text">Rated <strong>4.8 / 5</strong> on Google</div>
+
+<div class="review-box">
+“Very clean rooms, polite staff and perfect location. One of the best stays in Palakollu!”
+</div>
+
+<div class="review-box">
+“Excellent service and comfortable rooms. Highly recommended for families.”
+</div>
+
+<a href="https://www.google.com/search?q=Gulf+Horizon+Residency+Palakollu+reviews"
+target="_blank" class="review-btn">
+🔍 View All Google Reviews
+</a>
+</section>
+
+<section id="contact">
+<h2>Contact & Location</h2>
+<div class="contact-box">
+<div>
+<strong>Gulf Horizon Residency</strong><br><br>
+Opposite Old Sri Sowmya Hospital,<br>
+Mattam Street, Palakollu,<br>
+Andhra Pradesh 534260<br><br>
+📞 9701111659<br>
+💬 9701111659<br>
+📧 gulfhorizonr@gmail.com
+</div>
+
+<iframe
+src="https://www.google.com/maps?q=Gulf+Horizon+Residency+Palakollu&output=embed"
+width="100%" height="420"
+style="border:0;border-radius:15px;"
+loading="lazy">
+</iframe>
+</div>
+</section>
+
+<a class="float call" href="tel:9701111659">📞</a>
+<a class="float whatsapp" href="https://wa.me/919701111659" target="_blank">💬</a>
+
+<div class="popup" id="popup">
+<div class="popup-content">
+<span class="close" onclick="closePop()">❌</span>
+<h3 id="popTitle"></h3>
+<img id="popImg">
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
